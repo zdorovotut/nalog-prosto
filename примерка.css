@@ -1,0 +1,101 @@
+
+@font-face {font-family:Montserrat;src:url("fonts/Montserrat.woff2") format("woff2");font-weight:100 900;font-display:block;}
+#экран-1 .специализации {font-size:var(--кегль-текст);line-height:1.65;color:var(--цвет-акцент);margin-block:var(--отступ-блока);}
+#экран-1 .контакт-витрины {font-size:var(--кегль-лид);font-weight:600;line-height:1.5;margin-block:var(--отступ-блока);}
+#экран-1 .контакт-витрины strong {display:block;font-size:clamp(23px,2vw,28px);font-weight:700;letter-spacing:-.025em;white-space:nowrap;color:var(--цвет-акцент);}
+#экран-1 .первый-экран__действие {display:flex;gap:var(--отступ-блока);align-items:center;flex-wrap:wrap;}
+#экран-1 .второе-действие {font-size:var(--кегль-мелкий);font-weight:600;text-decoration:underline;text-underline-offset:.3em;color:inherit;}
+#экран-1 .первый-экран__доверие {color:var(--цвет-текст);line-height:1.65;}
+#экран-1 .акцент {color:var(--цвет-акцент);font-style:normal;}
+#экран-1 .кикер {background:none;border:none;box-shadow:none;color:var(--цвет-акцент);padding:0;line-height:1.55;}
+#экран-1 .кикер svg {display:none;}
+#экран-1 .шапка {background:var(--цвет-фон);}
+#экран-1.первый-экран--разворот .пятно {display:none;}
+#экран-1.первый-экран--разворот {background:var(--цвет-фон);}
+#экран-1.первый-экран--бенто .бенто__ячейка--главная {background:color-mix(in srgb,var(--цвет-фон-2) 45%,var(--цвет-фон));color:var(--цвет-текст);border-top:3px solid var(--цвет-акцент);}
+#экран-1.первый-экран--бенто .бенто__ячейка--главная h1 {color:var(--цвет-текст);}
+#экран-1.первый-экран--бенто .бенто__ячейка--главная .лид {color:var(--цвет-текст);}
+#экран-1.первый-экран--бенто .бенто__ячейка--главная .кикер {color:var(--цвет-акцент);}
+#экран-1.первый-экран--бенто .бенто__ячейка--пункты {background:var(--цвет-фон);border:1px solid var(--цвет-линия);padding:var(--отступ-блока);}
+#экран-1.первый-экран--бенто .бенто__ячейка--пункты .специализации {margin:0;}
+@media(min-width:900px) {
+ #экран-1.первый-экран--разворот .блок__внутри {width:min(calc(100% - 7rem),var(--ширина));margin-inline:auto;min-height:calc(min(100svh,67.5rem) - 3.5rem);padding:clamp(2rem,5vh,4rem) 0;gap:3rem;align-items:center;grid-template-columns:1.2fr 1fr;}
+ #экран-1.первый-экран--разворот .первый-экран__картинка {margin:0;height:min(36rem,calc(100svh - 8rem));width:100%;border-radius:var(--радиус);mask-image:none;}
+ #экран-1.первый-экран--разворот .первый-экран__картинка img {object-fit:cover;object-position:48% 24%;}
+ #экран-1.первый-экран--разворот .первый-экран__текст {max-width:100%;padding:0;}
+ #экран-1.первый-экран--разворот h1 {max-width:9em;font-weight:800;}
+ #экран-1.первый-экран--сцена .блок__внутри {max-width:var(--ширина);min-height:calc(100svh - 3.5rem);display:flex;align-items:center;padding-block:2rem;}
+ #экран-1.первый-экран--сцена .первый-экран__текст {max-width:49%;padding:0;}
+ #экран-1.первый-экран--сцена .первый-экран__картинка {inset:3.5rem 0 0 38%;width:62%;height:calc(100% - 3.5rem);}
+ #экран-1.первый-экран--сцена .первый-экран__картинка img {object-position:42% 24%;}
+ #экран-1.первый-экран--сцена::after {background:linear-gradient(90deg,var(--цвет-фон) 0%,var(--цвет-фон) 35%,color-mix(in srgb,var(--цвет-фон) 90%,transparent) 44%,transparent 70%);}
+ #экран-1.первый-экран--сцена h1 {max-width:8em;line-height:1.05;font-weight:800;}
+ #экран-1.первый-экран--сцена .лид {max-width:27em;}
+ #экран-1.первый-экран--бенто .блок__внутри {width:min(calc(100% - 7rem),var(--ширина));padding:clamp(1.5rem,4vh,3rem) 0;}
+ #экран-1.первый-экран--бенто .бенто {height:calc(100svh - 9rem);max-height:47rem;min-height:26rem;grid-template-columns: .85fr 1.15fr;grid-template-rows:1fr auto;gap:var(--отступ-блока);}
+ #экран-1.первый-экран--бенто .бенто__ячейка--главная {grid-column:2;grid-row:1;padding:clamp(1.3rem,3vw,2.6rem);display:flex;align-items:center;}
+ #экран-1.первый-экран--бенто .первый-экран__картинка {grid-column:1;grid-row:1 / 3;height:100%;margin:0;}
+ #экран-1.первый-экран--бенто .первый-экран__картинка img {object-position:48% 24%;}
+ #экран-1.первый-экран--бенто .бенто__ячейка--пункты {grid-column:2;grid-row:2;display:block;}
+ #экран-1.первый-экран--бенто h1 {font-weight:700;}
+}
+@media(max-width:899px) {
+ #экран-1 .специализации {font-size:var(--кегль-текст);margin:0;order:4;line-height:1.55;}
+ #экран-1 .первый-экран__действие {order:5;gap:.8rem;}
+ #экран-1 .контакт-витрины {order:6;margin:0;}
+ #экран-1 .контакт-витрины span {display:none;}
+ #экран-1 .контакт-витрины strong {font-size:24px;}
+ #экран-1 .первый-экран__доверие {order:7;font-size:var(--кегль-мелкий);}
+ #экран-1 .первый-экран__действие .кнопка {width:100%;}
+ #экран-1 .второе-действие {display:block;text-align:center;width:100%;}
+ #экран-1 .первый-экран__картинка {order:8;}
+ #экран-1.первый-экран--разворот .первый-экран__картинка {height:27rem;mask-image:none;border-radius:var(--радиус);}
+ #экран-1.первый-экран--разворот .первый-экран__картинка img {object-position:48% 24%;}
+ #экран-1.первый-экран--сцена .первый-экран__картинка {position:relative;inset:auto;height:27rem;width:100%;opacity:1;margin-top:var(--отступ-блока);mask-image:none;border-radius:var(--радиус);}
+ #экран-1.первый-экран--сцена .первый-экран__картинка img {object-position:43% 23%;}
+ #экран-1.первый-экран--сцена::after {display:none;}
+ #экран-1.первый-экран--сцена {background:var(--цвет-фон);display:flex;flex-direction:column;}
+ #экран-1.первый-экран--сцена .шапка {order:0;}
+ #экран-1.первый-экран--сцена .блок__внутри {order:1;position:relative;}
+ #экран-1.первый-экран--сцена .первый-экран__картинка {order:2;margin-inline:1.25rem;width:calc(100% - 2.5rem);}
+ #экран-1.первый-экран--бенто .бенто {display:flex;flex-direction:column;gap:var(--отступ-блока);height:auto;}
+ #экран-1.первый-экран--бенто .бенто__ячейка--главная {padding:1.25rem;}
+ #экран-1.первый-экран--бенто .первый-экран__текст {display:flex;flex-direction:column;gap:.8rem;}
+ #экран-1.первый-экран--бенто .первый-экран__картинка {height:28rem;width:100%;}
+ #экран-1.первый-экран--бенто .бенто__ячейка--пункты {order:1;}
+ #экран-1.первый-экран--бенто .первый-экран__картинка {order:2;}
+}
+
+@media(max-width:899px) {
+ #экран-1 .кикер {white-space:normal;overflow:visible;text-overflow:clip;max-width:100%;flex-wrap:wrap;}
+ #экран-1.первый-экран--разворот .блок__внутри {display:flex;flex-direction:column;align-items:stretch;padding:1.5rem 1.25rem;gap:.875rem;}
+ #экран-1.первый-экран--разворот .первый-экран__текст {display:contents;}
+ #экран-1.первый-экран--разворот .первый-экран__картинка {position:relative;margin:1rem 0 0;width:100%;align-self:stretch;}
+ #экран-1.первый-экран--сцена {padding-top:0;align-items:stretch;min-height:0;}
+ #экран-1.первый-экран--сцена .блок__внутри {padding:1.5rem 1.25rem 0;min-height:0;height:auto;margin:0;width:100%;display:flex;flex-direction:column;align-items:stretch;}
+ #экран-1.первый-экран--сцена .первый-экран__текст {display:flex;flex-direction:column;gap:.875rem;padding:0;margin:0;min-height:0;}
+ #экран-1.первый-экран--сцена .первый-экран__картинка {margin-top:1.25rem;flex-shrink:0;}
+ #экран-1.первый-экран--бенто .кикер {white-space:normal;display:block;}
+ #экран-1.первый-экран--бенто .первый-экран__текст {gap:.875rem;}
+}
+@media(min-width:900px) {
+ #экран-1.первый-экран--сцена .первый-экран__текст {align-self:center;}
+}
+
+@media(max-width:899px) {
+ #экран-1.первый-экран--сцена .шапка {position:relative;inset:auto;width:100%;}
+}
+
+@media(min-width:900px) {
+ #экран-1.первый-экран--сцена {padding:0;height:clamp(37.5rem,100svh,67.5rem);min-height:0;}
+ #экран-1.первый-экран--сцена .блок__внутри {margin-top:3.5rem;min-height:0;height:calc(clamp(37.5rem,100svh,67.5rem) - 3.5rem);}
+}
+@media(max-width:899px) {
+ #экран-1.первый-экран--бенто .первый-экран__картинка {order:1;}
+ #экран-1.первый-экран--бенто .бенто__ячейка--пункты {order:2;}
+ #экран-1.первый-экран--бенто .контакты-под-кадром {order:3;background:var(--цвет-фон);padding:var(--отступ-блока);border:1px solid var(--цвет-линия);}
+ #экран-1.первый-экран--бенто .контакты-под-кадром .первый-экран__доверие {margin:0;}
+}
+@media(min-width:900px) {#экран-1.первый-экран--бенто .контакты-под-кадром {display:none;}}
+
+@media(max-width:899px) {#экран-1 .только-компьютер {display:none;}}

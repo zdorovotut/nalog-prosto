@@ -1,0 +1,42 @@
+
+#экран-1 .ситуации-группа{margin-block:var(--отступ-блока);display:flex;flex-direction:column;align-items:flex-start;gap:.8rem}
+#экран-1 .темы{display:flex;flex-wrap:wrap;gap:.5rem}
+#экран-1 .тема{display:inline-flex;padding:.35rem .65rem;border:1px solid var(--цвет-линия);border-radius:999px;background:color-mix(in srgb,var(--цвет-фон-2) 15%,var(--цвет-фон));font-size:14px;line-height:1.45;color:var(--цвет-акцент)}
+#экран-1 .выбор-ситуации{color:var(--цвет-акцент);font-size:14px;font-weight:600;text-underline-offset:.25em}
+#экран-1 .выбор-ситуации:focus-visible,#экран-1 .msg:focus-visible{outline:3px solid var(--цвет-акцент);outline-offset:4px}
+#экран-1 .первый-экран__действие{display:block}
+#экран-1 .contact-card{margin:0;width:100%;padding:22px 24px;border:1px solid var(--цвет-линия);border-radius:20px;background:color-mix(in srgb,var(--цвет-фон-2) 12%,var(--цвет-фон));box-sizing:border-box}
+#экран-1 .contact-title{margin:0 0 10px;color:var(--цвет-текст);font-size:20px;font-weight:700;line-height:1.4}
+#экран-1 .phone-label{font-size:14px;line-height:1.5;margin:0 0 .35rem;color:var(--цвет-текст)}
+#экран-1 .contact-main{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+#экран-1 .phone{font-size:clamp(24px,2vw,28px);font-weight:800;letter-spacing:-.025em;line-height:1.35;color:var(--цвет-текст);white-space:nowrap}
+#экран-1 .messenger-icons{display:flex;flex-direction:row;flex-wrap:nowrap;gap:10px;align-items:center}
+#экран-1 .msg{width:46px;height:46px;flex:0 0 46px;border-radius:14px;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 8px 18px color-mix(in srgb,var(--цвет-текст) 10%,transparent);transition:transform .17s ease,box-shadow .17s ease;overflow:hidden}
+#экран-1 .msg:hover{transform:translateY(-2px);box-shadow:0 10px 22px color-mix(in srgb,var(--цвет-текст) 14%,transparent)}
+#экран-1 .msg svg{width:27px;height:27px;display:block;fill:currentColor}
+#экран-1 .msg.telegram{background:#2aabee;color:#fff}
+#экран-1 .msg.whatsapp{background:#25d366;color:#fff}
+#экран-1 .msg.max{background:transparent}
+#экран-1 .msg.max img{width:46px;height:46px;display:block;border-radius:14px;object-fit:cover}
+#экран-1 .contact-meta{margin:14px 0 0;font-size:16px;line-height:1.5}
+#экран-1 .contact-meta a{color:var(--цвет-акцент);text-underline-offset:.25em;overflow-wrap:anywhere}
+#экран-1 .первый-экран__картинка,#экран-1 .первый-экран__картинка picture,#экран-1 .первый-экран__картинка img{mask-image:none!important;-webkit-mask-image:none!important;filter:none!important}
+#экран-1 .первый-экран__картинка{border-radius:var(--радиус);overflow:hidden}
+#экран-1 .первый-экран__картинка::before,#экран-1 .первый-экран__картинка::after{display:none!important}
+@media(max-width:899px){
+#экран-1 .ситуации-группа{order:4;margin:0}
+#экран-1 .первый-экран__действие{order:5}
+#экран-1 .contact-card{padding:18px 17px;border-radius:17px}
+#экран-1 .contact-title{font-size:18px;margin-bottom:8px}
+#экран-1 .contact-main{gap:12px}
+#экран-1 .phone{font-size:clamp(23px,6.5vw,26px)}
+#экран-1 .contact-meta{font-size:15px}
+#экран-1 .первый-экран__картинка{order:6}
+}
+
+#экран-1 .phone-label{font-size:16px}
+@media(max-width:899px){
+#экран-1 .contact-card{padding:14px 17px}
+#экран-1 .contact-title{margin-bottom:4px}
+#экран-1 .phone-label{margin-bottom:0}
+}

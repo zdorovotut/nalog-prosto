@@ -1,0 +1,10 @@
+
+#экран-1 .ситуации-группа{align-items:center;text-align:center;width:100%}
+#экран-1 .темы{justify-content:center}
+@media(max-width:899px){
+#экран-1 .первый-экран__действие{order:4}
+#экран-1 .ситуации-группа{order:5}
+#экран-1 .первый-экран__картинка{order:6}
+}
+
+#экран-1 .ситуации-группа{margin-bottom:0}
