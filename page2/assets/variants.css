@@ -1,0 +1,8 @@
+.compositions{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.compositions a{display:block;padding:8px 11px;border:1px solid #C8D8D0;border-radius:8px;white-space:nowrap;font-size:13px}
+.compositions a[aria-current=page]{background:#C8D8D0;color:#2F5E50}
+@media(max-width:1100px){.viewer-bar{flex-wrap:wrap}.compositions{order:3;width:100%}}
+
+/* Numbered compositions stay together on a dedicated toolbar row. */
+.viewer-bar:has(.compositions-all){flex-wrap:wrap}
+.compositions-all{order:3;width:100%}

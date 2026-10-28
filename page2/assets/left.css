@@ -1,0 +1,6 @@
+/* One concave entrance on the left; quiet upright support against the photo. */
+.repair-buttons{left:0;top:220px;width:1166px;height:680px;background-image:url('image-431ed0e434a0.webp');background-position:0 -220px;mask-image:linear-gradient(90deg,#000,#000 calc(100% - 24px),transparent),linear-gradient(transparent,#000 16px,#000 calc(100% - 20px),transparent);mask-composite:intersect}
+.repair-joint,.repair-copy{display:none}
+.panel-side{position:absolute;left:1117px;top:266px;width:11px;height:591px;border-radius:0 5px 9px 0;background:linear-gradient(90deg,#A8B4A5,#CDD3C4 56%,#E3E3D4);box-shadow:3px 2px 6px #2F5E5014;pointer-events:none;z-index:0}
+#экран-02 .response{left:592px;width:490px}
+#экран-02 .response-body .np02-action{width:490px}

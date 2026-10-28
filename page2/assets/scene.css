@@ -1,0 +1,39 @@
+/* Original 1672 × 941 artwork is the coordinate system; chosen buttons keep their native geometry. */
+body{background:#F6F1E8}
+.viewer-bar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 22px;border-bottom:1px solid #C8D8D0;font-size:13px;line-height:1.5}
+.viewer-bar a{text-decoration:none}.viewer-controls{display:flex;gap:8px;flex-wrap:wrap}.viewer-controls button{padding:9px 13px;border:1px solid #C8D8D0;border-radius:8px;background:#FBF8F2;color:#2F5E50;cursor:pointer;font:inherit}
+.viewer-controls button[aria-pressed=true]{color:#F6F1E8;background:#2F5E50;border-color:#2F5E50}
+.viewport{margin:18px auto;position:relative;overflow:auto;width:calc(100% - 32px);max-width:1672px}
+.scene-frame{position:relative;margin:auto}
+#экран-02.artboard{position:absolute;left:0;top:0;width:1672px;height:941px;max-width:none;margin:0;padding:0;transform-origin:top left;isolation:isolate;overflow:hidden}
+.artwork{position:absolute;inset:0;display:block;width:1672px;height:941px;max-width:none;z-index:-2;user-select:none;pointer-events:none}
+.repair{position:absolute;pointer-events:none;z-index:-1;background-image:url('image-3911b4576bc3.webp');background-repeat:no-repeat;background-size:1672px 941px}
+.repair-buttons{left:0;top:220px;width:495px;height:659px;background-position:0 -220px;mask-image:linear-gradient(90deg,#000,#000 calc(100% - 2px),transparent),linear-gradient(transparent,#000 34px,#000 calc(100% - 32px),transparent);mask-composite:intersect}
+.repair-joint{left:488px;top:444px;width:49px;height:116px;background-position:-488px -444px;mask-image:linear-gradient(transparent,#000 8px,#000 calc(100% - 8px),transparent)}
+.repair-copy{left:508px;top:245px;width:646px;height:615px;background-position:-508px -245px;clip-path:path('M24 3 H567 Q588 3 592 23 C618 116 642 219 639 312 C637 410 620 514 597 590 Q592 609 568 609 H25 Q4 609 4 588 V24 Q4 3 24 3 Z')}
+#экран-02 .choices{position:absolute;left:74px;top:304px;width:440px;display:grid;gap:5px;padding:0;margin:0;z-index:3}
+#экран-02 .key{width:440px;height:76px}
+#экран-02 .key-face{padding:10px 24px;gap:19px}
+#экран-02 .response{position:absolute;left:563px;top:286px;width:560px;height:548px;margin:0;padding:0;color:#2E3130;z-index:2}
+#экран-02 .response[hidden]{display:none}
+#экран-02 .response-number{display:flex;align-items:center;gap:18px;height:24px;font-size:17px;line-height:24px;color:#2F5E50;letter-spacing:.08em}
+#экран-02 .response-number::before{content:'';width:32px;height:1px;background:#C7B08A}
+#экран-02 .response h2{font-size:54px;font-weight:500;line-height:1.04;letter-spacing:-.035em;color:#2F5E50;margin:29px 0 24px}
+#экран-02 .response-body{font-size:20px;line-height:1.42;font-weight:400}
+#экран-02 .response-body p{margin:0 0 23px}
+#экран-02 .response-body .np02-prepare{border-left:2px solid #C7B08A;padding-left:18px;margin:0 0 24px}
+#экран-02 .response-body .np02-prepare strong{display:block;font-weight:600;color:#2F5E50;margin-bottom:8px}
+#экран-02 .response-body .np02-action{display:flex;align-items:center;justify-content:space-between;gap:18px;width:510px;min-height:68px;padding:17px 32px;border:1px solid color-mix(in srgb,#2F5E50 85%,#C8D8D0);border-radius:18px;background:linear-gradient(120deg,#3C6D5C,#2F5E50);box-shadow:0 10px 18px color-mix(in srgb,#2F5E50 16%,transparent),inset 0 1px 1px #9DB8AB;color:#F6F1E8;font-size:19px;font-weight:600;line-height:1.35;text-decoration:none}
+#экран-02 .response-body .np02-action::after{content:'↗';font-size:18px}
+#экран-02 .response.dense h2{font-size:46px;margin:22px 0 20px}
+#экран-02 .response.dense .response-body{font-size:19px;line-height:1.38}
+#экран-02 .response.dense .response-body p{margin-bottom:18px}
+#экран-02 .response.dense .np02-prepare{margin-bottom:20px}
+#экран-02 .response.dense .np02-action{min-height:62px;padding-block:14px}
+#экран-02 .response.compact h2{font-size:42px;margin-top:18px;margin-bottom:18px}
+#экран-02 .response.compact .response-body{font-size:18px;line-height:1.38}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.viewer-note{max-width:1200px;margin:10px auto 24px;padding:0 22px;font-size:13px;line-height:1.7;color:#2F5E50}
+body[data-mode=original] .interactive-layer{visibility:hidden;pointer-events:none}
+.capture .viewer-bar,.capture .viewer-note{display:none}.capture .viewport{margin:0;width:100%;max-width:none}
+@media(max-width:700px){.viewer-bar{flex-wrap:wrap;padding:12px 16px}.viewer-controls{width:100%}.viewer-controls button{font-size:12px}.viewport{width:calc(100% - 16px)}.viewer-note{font-size:13px}}
